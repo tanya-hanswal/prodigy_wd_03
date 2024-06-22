@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  margin-top: 1.5rem;
+  font-family: "Vollkorn", serif;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+body {
+  background-color: rgb(59, 59, 194);
+  text-align: center;
+}
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.turn-container {
+  width: 170px;
+  height: 80px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+}
+.turn-container h3 {
+  font-family: "Vollkorn", serif;
+  font-size: 1.7rem;
+  color: #e3e1e9;
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.turn-container .turn-box {
+  border: 3px solid black;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+.turn-container .turn-box:nth-child(even) {
+  border-right: none;
+}
+.bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85px;
+  height: 40px;
+  background-color: yellowgreen;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board {
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+.btn {
+  background-color: #cbc0b3;
+  height: 18vmin;
+  width: 18vmin;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  font-size: 3.7rem;
+  font-family: "Nunito", sans-serif;
+  text-shadow: 0px 5px 5px gray;
+  color: #f26419;
+
+  font-weight: 700;
+}
+.play-again {
+  padding: 9px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  color: #231942;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  background-color: #ffcad4;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.winner-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.player {
+  font-size: 1.4rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  color: #d6cdf0;
+}
+span {
+  font-size: 1.4rem;
+}
+@media screen and (width<504px) {
+  .turn-container .turn-box {
+    font-size: 1.3rem;
+  }
+  .turn-container h3 {
+    font-size: 1.4rem;
+  }
+  .btn {
+    font-size: 2.7rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .play-again {
+    padding: 6px;
+  }
+  .player {
+    font-size: 20px;
+  }
+  .container {
+    height: 40vh;
+  }
+}
