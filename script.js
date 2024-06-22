@@ -82,67 +82,6 @@ document.querySelector(".play-again").addEventListener("click", () => {
   });
 });
 
-// let restart_btn = document.querySelector(".restart");
 
-// let newGameBtn = document.querySelector(".play-again");
-// let playerturn = document.querySelector(".playerturn");
 
-// let turnX = true;
 
-// const restartGame = () => {
-//   turnX = true;
-//   newgame();
-// };
-
-// btns.forEach((btn) => {
-//   btn.addEventListener("click", (e) => {
-//     if (turnX) {
-//       btn.innerHTML = "X";
-//       btn.style.color = "#57f34e";
-//       turnX = false;
-//     } else {
-//       btn.innerHTML = "0";
-//       turnX = true;
-//     }
-
-//     btn.disabled = true;
-//     checkWinner();
-
-//   });
-// });
-
-// const disableBtns = () => {
-//   for (let btn of btns) {
-//     btn.disabled = true;
-//   }
-// };
-// const newgame = () => {
-//   for (let btn of btns) {
-//     btn.disabled = false;
-//     btn.innerHTML = "";
-//   }
-// };
-
-// const showWinner = (winner) => {
-//   winPlayer.innerText = `Player ${winner} won the game`;
-//   disableBtns();
-// };
-
-// const checkWinner = () => {
-//   for (let pattern of winPattern) {
-//     let val1 = btns[pattern[0]].innerHTML;
-//     let val2 = btns[pattern[1]].innerHTML;
-//     let val3 = btns[pattern[2]].innerHTML;
-
-//     if (val1 != "" && val2 != "" && val3 != "") {
-//       if (val1 === val2 && val2 === val3) {
-//         showWinner(val1);
-//       }
-//     }
-//   }
-// };
-
-// newGameBtn.addEventListener("click", () => {
-//   restartGame();
-//   winPlayer.innerText = "";
-// });
